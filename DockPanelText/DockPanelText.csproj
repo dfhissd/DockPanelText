@@ -51,8 +51,38 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm3.Designer.cs">
+      <DependentUpon>Frm3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm1.Designer.cs">
+      <DependentUpon>Frm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm2.Designer.cs">
+      <DependentUpon>Frm2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm3.resx">
+      <DependentUpon>Frm3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm1.resx">
+      <DependentUpon>Frm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm2.resx">
+      <DependentUpon>Frm2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -74,6 +104,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DockForm\WinFormsUI\1 WinFormsUI.csproj">
+      <Project>{c75532c4-765b-418e-b09b-46d36b2abdb1}</Project>
+      <Name>1 WinFormsUI</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
